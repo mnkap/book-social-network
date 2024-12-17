@@ -70,11 +70,6 @@ jobs:
           cd book-network
           ./mvnw clean compile
 
-  build-image:
-    name: Build Docker image
-    runs-on: self-hosted
-    needs: [build]
-    steps:
       - name: Setup JDK
         uses: actions/setup-java@v4
         with:
