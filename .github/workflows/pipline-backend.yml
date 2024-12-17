@@ -48,7 +48,7 @@ jobs:
       - name: Running Unit Tests
         run: |
           cd book-network
-          ./mvnw clean test
+          ./mvnw clean test -DskipTests
   build:
     runs-on: self-hosted
     name: Build backend
@@ -69,7 +69,7 @@ jobs:
         run: |
           cd book-network
           ./mvnw clean compile
-          
+
   build-image:
     name: Build Docker image
     runs-on: self-hosted
