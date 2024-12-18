@@ -32,7 +32,7 @@ services:
 
   bsn-ui:
     container_name: bsn-ui
-    image: bsn/bsn-ui:1.0.0
+    image: gbt1/bsn-ui:1.0.1
     ports:
       - 8080:80
     networks:
